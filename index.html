@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body{
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .clock{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            font-size: 5em;
+            border-radius: 40px;
+            
+        }
+        @media screen and (max-width:1200px){
+            .clock{
+                font-size: 2em;
+            }
+        }
+        @media screen and(max-width:600px){
+            .clock{
+                font-size: medium;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Clock</h1>
+  
+    <div class="clock">
+        <h2 id="hour">00</h2> 
+        <h2 id="colon">:</h2>
+        <h2 id="munite">00</h2>
+        <h2 id="colon1">:</h2>
+        <h2 id="second">00</h2>
+        <h5 id="ampm">AM</h5>
+    </div>
+    <footer>
+        &copy;MSD sanket paul |https://github.com/sanketpaul
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
